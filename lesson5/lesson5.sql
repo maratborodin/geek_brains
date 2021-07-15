@@ -2,7 +2,7 @@ use vk;
 
 select * from users u ;
 
---Фильтрация
+--Filtration
 1)
 update users set
 	created_at = now()
@@ -38,7 +38,7 @@ order by case when value <> 0 then value end desc,
 			case when value = 0 then value end;
 
 
---Агрегация
+--Aggregation
 1)
 select floor(avg(TO_DAYS(NOW()) - TO_DAYS(birthday))/365.25) AS age from profiles;
 

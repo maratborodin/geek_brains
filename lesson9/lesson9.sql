@@ -47,13 +47,13 @@ begin
 	set = hour(now());
 	case
 		when hour between 0 and 5
-			then return 'Доброй ночи';
+			then return 'Р”РѕР±СЂРѕР№ РЅРѕС‡Рё';
 		when hour between 6 and 11
-			then return 'Доброе утро';
+			then return 'Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ';
 		when hour between 12 and 17
-			then return 'Добрый день';
+			then return 'Р”РѕР±СЂС‹Р№ РґРµРЅСЊ';
 		when hour between 18 and 23
-			then return 'Добрый вечер';
+			then return 'Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ';
 	end case;	
 end //
 
